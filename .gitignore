@@ -1,51 +1,76 @@
-# See http://help.github.com/ignore-files/ for more about ignoring files.
+# WordPress #
+############
+wp-config-local.php
+wp-cli.local.yml
+wp-content/uploads
+wp-content/blogs.dir/
+wp-content/upgrade/
+wp-content/backup-db/
+wp-content/updraft/
+wp-content/backupwordpress-*/
+wp-content/managewp/backups/
+wp-content/advanced-cache.php
+wp-content/wp-cache-config.php
+sitemap.xml
+sitemap.xml.gz
+*.log
 
-# compiled output
-/dist
-/tmp
-/out-tsc
-# Only exists if Bazel was run
-/bazel-out
+# @TODO writable paths
+wp-content/cache/
+wp-content/backups/
 
-# dependencies
-/node_modules
+# Avoid accidental modification of pantheon.upstream.yml in sites
+# created from this upstream
+pantheon.upstream.yml
 
-# profiling files
-chrome-profiler-events*.json
-speed-measure-plugin*.json
+# Packages #
+############
+*.7z
+*.dmg
+*.gz
+*.bz2
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+*.tgz
+!wp-includes/**/*.gz
 
-# IDEs and editors
-/.idea
-/.vs
-/.vscode
-.project
-.classpath
-.c9/
-*.launch
-.settings/
-*.sublime-workspace
+# Logs and databases #
+######################
+*.log
+*.sql
 
-# IDE - VSCode
-.vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
-.history/*
-
-# misc
-/.sass-cache
-/connect.lock
-/coverage
-/libpeerconnection.log
-npm-debug.log
-yarn-error.log
-testem.log
-/typings
-
-# System Files
-.DS_Store
+# OS generated files #
+######################
+.DS_Store*
+ehthumbs.db
 Thumbs.db
+._*
 
-# Local Config
-/src/environments/environment.local.ts
+# Vim generated files #
+######################
+*.un~
+
+# SASS #
+##########
+.sass-cache
+
+/.idea
+/vendor
+/.phpunit/
+/.scannerwork/
+SonarPushFile
+/tests/_report/
+/tests/_output/
+/htdocs.bak.zip
+/testing.bak.zip
+/wp-content.bak.zip
+/codeception-params.local.env
+.phpunit.result.cache
+
+
+# .htaccess, makes it only for local development #
+##################################################
+.htaccess
