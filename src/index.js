@@ -3,5 +3,4 @@
 
 const something = 123;
 
-console.log("Hello World!" + something );
- 
+console.log("Hello World!" + somethig );
