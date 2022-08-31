@@ -59,6 +59,7 @@ Thumbs.db
 
 /.idea
 /vendor
+/node_modules
 /.phpunit/
 /.scannerwork/
 SonarPushFile
